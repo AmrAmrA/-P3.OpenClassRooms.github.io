@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Shrikhand&display=swap");
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+}
+
+header p {
+  text-align: center;
+  font-weight: 700;
+  font-family: Shrikhand, sans-serif;
+  font-size: 30px;
+  padding: 15px;
+  margin: 0px auto;
+  box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.75);
+}
+
+.location_container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 12px 0;
+  background-color: rgba(128, 128, 128, 0.5);
+}
+.location_container .location_icon {
+  width: 25px;
+  height: 20px;
+}
+
+.site_presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 0px;
+}
+.site_presentation .slogan_paragraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  text-align: center;
+}
+.site_presentation .description_paragraph {
+  text-align: center;
+  color: rgb(100, 98, 98);
+  font-size: 15px;
+}
+.site_presentation button {
+  outline: none;
+  border: none;
+  background-image: linear-gradient(0deg, #9356DC, #FF79DA);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px 0px;
+  width: 250px;
+  border-radius: 40px;
+  box-shadow: 0.7px 0.7px 6px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.site_presentation button:hover {
+  background-color: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.66);
+}
+
+.features {
+  margin: 40px 0px 0px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.features .features_title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.features ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 45px;
+}
+.features ul .features_item {
+  display: flex;
+  justify-content: space-around;
+  background-color: red;
+  padding: 20px 8px;
+  gap: 20px;
+  text-align: center;
+  width: 95%;
+  border-radius: 20px;
+}
+.features ul .number {
+  background-color: #9356DC;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: -20px;
+}
+.features .features_item img {
+  width: 15px;
+  height: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
