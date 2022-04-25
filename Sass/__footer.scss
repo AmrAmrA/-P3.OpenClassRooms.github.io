@@ -1,0 +1,34 @@
+ // Footer section 
+ footer {
+    margin-top: 55px;
+    padding: 18px;
+    background-color: #353535;
+    .OhMyFood_footer {
+        margin-bottom: 20px;
+        color: white;
+        font-weight: 400;
+        font-family: Shrikhand, sans-serif;
+        font-size: 22px;
+    }
+    .footer_icon {
+        width           : 15px;
+        height          : 15px;
+        margin-right    : 5px;
+    }
+}
+.footer_list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+    a {
+        color: white;
+    }
+    .footer_item {
+        cursor: pointer;
+    }
+}
+.footer_list a:hover {
+    text-decoration: underline;
+    
+}

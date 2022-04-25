@@ -13,6 +13,45 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: black;
+}
+
+footer {
+  margin-top: 55px;
+  padding: 18px;
+  background-color: #353535;
+}
+footer .OhMyFood_footer {
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 400;
+  font-family: Shrikhand, sans-serif;
+  font-size: 22px;
+}
+footer .footer_icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.footer_list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+.footer_list a {
+  color: white;
+}
+.footer_list .footer_item {
+  cursor: pointer;
+}
+
+.footer_list a:hover {
+  text-decoration: underline;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: white;
@@ -220,41 +259,6 @@ main .resto_cover {
 .heart_empty:hover {
   opacity: 0;
   transition: 0.5s;
-}
-
-footer {
-  margin-top: 55px;
-  padding: 18px;
-  background-color: #353535;
-}
-footer .OhMyFood_footer {
-  margin-bottom: 20px;
-  color: white;
-  font-weight: 400;
-  font-family: Shrikhand, sans-serif;
-  font-size: 22px;
-}
-footer .footer_icon {
-  width: 15px;
-  height: 15px;
-  margin-right: 5px;
-}
-
-.footer_list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-bottom: 25px;
-}
-.footer_list a {
-  color: white;
-}
-.footer_list .footer_item {
-  cursor: pointer;
-}
-
-.footer_list a:hover {
-  text-decoration: underline;
 }
 
 @media screen and (min-width: 400px) {
