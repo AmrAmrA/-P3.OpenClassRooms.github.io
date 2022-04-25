@@ -1,0 +1,158 @@
+@import '__reset.scss'; 
+@import '__variables.scss'; 
+@import '__mixins.scss'; 
+@import '__footer.scss'; 
+
+// header 
+    .header_container {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 10% 0 8%;
+        .header_arrow {
+            width: 30px;
+            display: flex;
+        }
+        .restaurant_logo {
+            text-align: center;
+            font-weight: 700;
+            font-family: 'Shrikhand', sans-serif;
+            font-size: 30px;
+            padding: 15px;
+            margin: 0px auto;
+        }
+    }
+
+    main {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        transform: translateY(-30px);
+        background-color: rgb(235, 224, 224);
+    }
+    .resto_title {
+        font-family: 'Shrikhand', sans-serif;
+        display: flex;
+        align-self: center;
+    }
+
+    // Heart animation and the name of the restaurant
+    .menu_header {
+        display: flex;
+        justify-content: space-between;
+        padding: 5% 6% 0% 25px;
+    }
+
+    .heart {
+        width: 25px;
+        stroke-width: 30;
+        stroke: black;
+        fill: white;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      
+      .heart_full {
+        position: absolute;
+        fill: url(#text-fill);
+        stroke: none;
+      }
+      
+      .heart_empty {
+        width: 25px;
+        position: relative;
+      }
+      
+      .heart_empty:hover {
+        opacity: 0;
+        transition: 0.5s;
+      }
+    //   The food section
+      .menu_title {
+          margin: 25px 0px 15px 25px;
+          font-family: 'Roboto', sans-serif;
+          text-transform: uppercase;
+      }
+      .menu_title::after {
+          content           : "";
+          display           : flex;
+          top               : 3px;
+          position          : relative;
+          width             : 23px;
+          height            : 3px;
+          background-color  : rgba(0, 128, 0, 0.4);
+      }
+
+      .menu_starter, .menu_meals, .menu_desserts {
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
+      }
+      .menu_container {
+        background-color: white;
+        border-radius: 15px;
+        margin: 0 6%;
+        cursor: pointer;
+        animation: apparition 0.5s cubic-bezier(0.96, 0.01, 0.05, 0.97) 0.5s normal forwards;
+        @keyframes apparition {
+          from {
+            opacity: 0;
+          }
+        
+          to {
+            opacity: 1;
+          }
+        }
+        .menu_item {
+            box-shadow: 4px 1px 7px rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            height: 60px;
+        }
+    }
+
+    .container_1 {
+        animation-duration: 1s;
+    }
+    .container_2 {
+        animation-duration: 1.2s;
+    }
+    .container_3 {
+        animation-duration: 1.4s;
+    }
+    .container_4 {
+        animation-duration: 1.6s;
+    }
+    .container_5 {
+        animation-duration: 1.8s;
+    }
+    .container_6 {
+        animation-duration: 2s;
+    }
+    .container_7 {
+        animation-duration: 2.2s;
+    }
+    .container_8 {
+        animation-duration: 2.4s;
+    }
+    .container_9 {
+        animation-duration: 2.6s;
+    }
+      .item_container {
+          padding: 10px;
+          display: flex;
+          justify-content: space-between;
+          .title {
+            font-size       : 15px;
+            font-weight     : 900;
+            font-family     : 'Roboto', sans-serif;
+            margin-bottom   : 4px;
+          }
+          .subtitle {
+              color: rgba(94, 83, 83, 0.993)
+          }
+
+          .food_price {
+              display: flex;
+              flex-direction: column;
+              align-self: flex-end;
+          }
+      }
+          
