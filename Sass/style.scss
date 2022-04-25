@@ -120,9 +120,11 @@ ul {
     .features_item img {
         width: 15px;
         height: 15px;
+        margin: auto 0px;
     }
     .text {
         font-size: 14px;
+        margin: auto 0px;
     }
 
     // Restauration Section 
@@ -166,7 +168,7 @@ ul {
     .resto_list {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 55px;
     }
 
     .resto_container {
@@ -175,7 +177,7 @@ ul {
         padding: 8px 9px 0px;
         background-color: rgba(212, 212, 212, 0.2);
         transform: translateY(-4px);
-        height: 55px;
+        height: 75px;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
         .resto_informations {
@@ -190,9 +192,7 @@ ul {
         font-weight: bold;
     }
     .resto_heart {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin: auto 0;
     }
     .heart {
         width: 20px;
@@ -241,9 +241,16 @@ ul {
         flex-direction: column;
         gap: 12px;
         margin-bottom: 25px;
-        li {
+        a {
             color: white;
         }
+        .footer_item {
+            cursor: pointer;
+        }
+    }
+    .footer_list a:hover {
+        text-decoration: underline;
+        
     }
 
 @import '__breakpoints.scss'

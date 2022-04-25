@@ -125,10 +125,12 @@ header p {
 .features_item img {
   width: 15px;
   height: 15px;
+  margin: auto 0px;
 }
 
 .text {
   font-size: 14px;
+  margin: auto 0px;
 }
 
 main {
@@ -168,7 +170,7 @@ main .resto_cover {
 .resto_list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 55px;
 }
 
 .resto_container {
@@ -177,7 +179,7 @@ main .resto_cover {
   padding: 8px 9px 0px;
   background-color: rgba(212, 212, 212, 0.2);
   transform: translateY(-4px);
-  height: 55px;
+  height: 75px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
@@ -193,9 +195,7 @@ main .resto_cover {
 }
 
 .resto_heart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: auto 0;
 }
 
 .heart {
@@ -246,8 +246,63 @@ footer .footer_icon {
   gap: 12px;
   margin-bottom: 25px;
 }
-.footer_list li {
+.footer_list a {
   color: white;
+}
+.footer_list .footer_item {
+  cursor: pointer;
+}
+
+.footer_list a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 400px) {
+  .text {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .text {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 800px) {
+  main {
+    margin: 40px 0px 0px 0px;
+  }
+
+  main .resto_title {
+    margin-left: 20px;
+  }
+
+  .resto_list {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .card {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 950px) {
+  .features ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    margin: 0 5%;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .text {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
