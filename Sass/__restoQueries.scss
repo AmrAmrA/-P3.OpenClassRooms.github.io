@@ -1,0 +1,17 @@
+@media screen and (min-width: 970px) {
+    .menu_header {
+        justify-content: center;
+        gap: 200px;
+        margin-bottom: 45px;
+        padding: 0;
+    }
+    .menu_container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-bottom: 30px;
+    }
+    .menu_item {
+        width: 300px;
+    }
+}
