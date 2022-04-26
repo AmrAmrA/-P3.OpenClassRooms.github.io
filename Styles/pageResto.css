@@ -141,62 +141,19 @@ main {
   border-radius: 15px;
   margin: 0 6%;
   cursor: pointer;
-  animation: apparition 0.5s cubic-bezier(0.96, 0.01, 0.05, 0.97) 0.5s normal forwards;
-}
-@keyframes apparition {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 .menu_container .menu_item {
   box-shadow: 4px 1px 7px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
-  height: 60px;
-}
-
-.container_1 {
-  animation-duration: 1s;
-}
-
-.container_2 {
-  animation-duration: 1.2s;
-}
-
-.container_3 {
-  animation-duration: 1.4s;
-}
-
-.container_4 {
-  animation-duration: 1.6s;
-}
-
-.container_5 {
-  animation-duration: 1.8s;
-}
-
-.container_6 {
-  animation-duration: 2s;
-}
-
-.container_7 {
-  animation-duration: 2.2s;
-}
-
-.container_8 {
-  animation-duration: 2.4s;
-}
-
-.container_9 {
-  animation-duration: 2.6s;
+  height: 65px;
 }
 
 .item_container {
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+}
+.item_container .food_recipes {
+  width: 95%;
 }
 .item_container .title {
   font-size: 15px;
@@ -207,10 +164,74 @@ main {
 .item_container .subtitle {
   color: rgba(94, 83, 83, 0.993);
 }
+.item_container .title, .item_container .subtitle {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 .item_container .food_price {
   display: flex;
   flex-direction: column;
-  align-self: flex-end;
+  justify-content: flex-end;
+  align-self: center;
+  margin-top: 24px;
+}
+
+.food_check {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  background-color: green;
+  width: 45px;
+  height: 65px;
+  opacity: 0;
+  transform: translate(15px, -52px);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+.food_check .background_check {
+  background-color: white;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.check_icon {
+  width: 15px;
+  height: 15px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  transform: rotate(180deg);
+  transition: transform 0.5s ease-in-out;
+  transition-delay: 0.3s;
+}
+
+.menu_container:hover .food_check {
+  opacity: 1;
+  transform: translate(10px, -52px);
+}
+
+.order_container {
+  display: flex;
+  justify-content: center;
+}
+
+.order_button {
+  height: 60px;
+  width: 426px;
+  color: #f1f1f1;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  font-family: Roboto;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-image 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
 }
 
 /*# sourceMappingURL=pageResto.css.map */
