@@ -8,8 +8,9 @@ body {
     background-color: white;
 }
 // Header
-header {
-    p
+.header {
+
+    &__logo
      {
         text-align: center;
         font-weight: 700;
@@ -21,38 +22,42 @@ header {
     }
 }
 // Location Container
-.location_container {
+.location {
     display: flex;
     justify-content: center;
     gap: 5px;
     padding: 12px 0;
     background-color: rgba(128, 128, 128, 0.5);
-    .location_icon {
+
+    &__icon {
         width:  25px;
         height: 20px;
     }
 }
 
 // Site presentation 
-.site_presentation {
+.presentation {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
     padding: 20px 0px;
-    .slogan_paragraph {
+
+    &__slogan {
         font-family: 'Roboto', sans-serif;
         font-weight: 800;
         font-size: 22px;
         text-align: center;
     }
-    .description_paragraph {
+
+    &__description {
         text-align: center;
         color: rgb(100, 98, 98);
         font-size: 15px;
     }
-    button {
+
+    &__button {
         outline: none;
         border: none;
         background-image: linear-gradient(0deg,$Violet,$Rose);
@@ -78,17 +83,21 @@ header {
     margin: 40px 0px 0px 20px;
     display: flex;
     flex-direction: column;
-    .features_title {
+
+    &__title {
         font-weight: bold;
         font-size: 20px;
         margin-bottom: 30px;
     }
-ul {
+    
+    &__list {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 25px;
-    .features_item {
+    }
+
+    &__item {
         display: flex;
         background-color: rgba(236, 218, 218, 0.658);
         padding: 20px 8px;
@@ -101,11 +110,9 @@ ul {
         box-shadow: 5px 4px 2px rgba(26, 2, 2, 0.712);
         &:hover {
             background-color: #bda8d6ef;
-        }
-    } 
+       }
 
-}   
-    .number {
+       &__number {
         background-color: $Violet;
         color: white;
         border-radius: 50%;
@@ -116,107 +123,121 @@ ul {
         justify-content: center;
         align-items: center;
         transform: translateX(-15px);
+     }
+
+      &__icon {
+            width: 15px;
+            height: 15px;
+            margin: auto 0px;
     }
-}
-    .features_item img {
-        width: 15px;
-        height: 15px;
-        margin: auto 0px;
-    }
-    .text {
+
+      &__text {
         font-size: 14px;
         margin: auto 0px;
     }
+  }
+}   
 
-    // Restauration Section 
-    main {
-        display: flex;
-        flex-direction: column;
-        margin: 40px 20px 0px 20px;
 
-        // Restaurant Title
-        .resto_title {
-            font-weight: bold;
-            font-size: 20px;
-            margin-bottom: 40px;
+
+
+// Restauration Section 
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 20px 0px 20px;
+
+    // Restaurant Title
+        &__title {
+              font-weight: bold;
+              font-size: 20px;
+              margin-bottom: 40px;
         }
 
-        // Restaurant Photo 
-        .resto_cover {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            aspect-ratio: 1/1;
-            border-top-left-radius  : 15px;
-            border-top-right-radius : 15px;
-        }
-    }
-    .card {
-        position: relative;
-        cursor: pointer;
-    }
-    // Green Button called New
-    .new_button {
-        position: absolute;
-        top: 5px;
-        right: 20px;
-        background-color: lightgreen;
-        color: #1b6150;
-        padding: 10px;
-        text-align: center;
-    }
 
-    .resto_list {
-        display: flex;
-        flex-direction: column;
-        gap: 55px;
-    }
-
-    .resto_container {
-        display: flex;
-        justify-content: space-between;
-        padding: 8px 9px 0px;
-        background-color: rgba(212, 212, 212, 0.2);
-        transform: translateY(-4px);
-        height: 75px;
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
-        .resto_informations {
+        &__list {
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            gap: 55px; 
         }
-    }
+        
 
-    .resto_name {
-        font-size: 18px;
-        font-weight: bold;
-    }
-    .resto_heart {
-        margin: auto 0;
-    }
-    .heart {
-        width: 20px;
-        stroke-width: 30;
-        stroke: black;
-        fill: white;
-        cursor: pointer;
-      }
-      
-      .heart_full {
-        position: absolute;
-        fill: url(#text-fill);
-        stroke: none;
-      }
-      
-      .heart_empty {
-        width: 20px;
-        position: relative;
-      }
-      
-      .heart_empty:hover {
-        opacity: 0;
-        transition: 0.5s;
-      }
+        &__card {
+            position: relative;
+            cursor: pointer;
+
+            // Restaurant Photo 
+            .resto__cover {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                aspect-ratio: 1/1;
+                border-top-left-radius  : 15px;
+                border-top-right-radius : 15px;
+            }
+
+            .main__button {
+                position: absolute;
+                top: 5px;
+                right: 20px;
+                background-color: lightgreen;
+                color: #1b6150;
+                padding: 10px;
+                text-align: center;
+            }
+        }
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 9px 0px;
+            background-color: rgba(212, 212, 212, 0.2);
+            transform: translateY(-4px);
+            height: 75px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+
+            .main__informations {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .main__name {
+                font-size: 18px;
+                font-weight: bold;
+            }   
+        }
+
+
+        .main__heart {
+            margin: auto 0;
+
+            &--icon {
+                width: 20px;
+                stroke-width: 30;
+                stroke: black;
+                fill: white;
+                cursor: pointer;
+            }
+
+            &--full {
+                position: absolute;
+                fill: url(#text-fill);
+                stroke: none;
+            }
+
+            &--empty {
+                width: 20px;
+                position: relative;
+
+                &:hover {
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+            }
+        }
+}
+
 
 @import '__breakpoints.scss'

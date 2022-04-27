@@ -108,7 +108,7 @@
         border-radius: 15px;
         background-color: white;
         box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
-        animation: apparition 0.5s cubic-bezier(0.96, 0.01, 0.05, 0.97) 0.5s normal forwards;
+        animation: apparition 5s cubic-bezier(0.96, 0.01, 0.05, 0.97);
         
         &:hover .food_checked {
             display: flex;
@@ -210,32 +210,32 @@
         }
       }
     
-.container_1 {
-    animation-duration: 1s;
+#container_1 {
+    animation-delay: 1s;
 }
-.container_2 {
-    animation-duration: 1.2s;
+#container_2 {
+    animation-delay: 1.2s;
 }
-.container_3 {
-    animation-duration: 1.4s;
+#container_3 {
+    animation-delay: 1.4s;
 }
-.container_4 {
-    animation-duration: 1.6s;
+#container_4 {
+    animation-delay: 1.6s;
 }
-.container_5 {
-    animation-duration: 1.8s;
+#container_5 {
+    animation-delay: 1.8s;
 }
-.container_6 {
-    animation-duration: 2s;
+#container_6 {
+    animation-delay: 2s;
 }
-.container_7 {
-    animation-duration: 2.2s;
+#container_7 {
+    animation-delay: 2.2s;
 }
-.container_8 {
-    animation-duration: 2.4s;
+#container_8 {
+    animation-delay: 2.4s;
 }
-.container_9 {
-    animation-duration: 2.6s;
+#container_9 {
+    animation-delay: 2.6s;
 }
     // Button Section 
     .order_container {
