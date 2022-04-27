@@ -70,6 +70,7 @@ body {
 .location {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 5px;
   padding: 12px 0;
   background-color: rgba(128, 128, 128, 0.5);
@@ -81,9 +82,9 @@ body {
 
 .presentation {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 15px;
   padding: 20px 0px;
 }
@@ -109,12 +110,11 @@ body {
   padding: 20px 0px;
   width: 250px;
   border-radius: 40px;
-  box-shadow: 0.7px 0.7px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.75);
   cursor: pointer;
 }
 .presentation__button:hover {
-  background-color: #fff;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.66);
+  box-shadow: 4px 2px 10px rgba(145, 137, 137, 0.822);
 }
 
 .features {
@@ -129,6 +129,7 @@ body {
 }
 .features__list {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 25px;
@@ -187,7 +188,6 @@ body {
 }
 .main__card {
   position: relative;
-  cursor: pointer;
 }
 .main__card .resto__cover {
   width: 100%;
@@ -233,7 +233,6 @@ body {
   stroke-width: 30;
   stroke: black;
   fill: white;
-  cursor: pointer;
 }
 .main .main__heart--full {
   position: absolute;
@@ -250,49 +249,46 @@ body {
 }
 
 @media screen and (min-width: 400px) {
-  .text {
+  .presentation__description {
     font-size: 18px;
   }
 }
 @media screen and (min-width: 600px) {
-  .text {
+  .presentation__description {
     font-size: 22px;
   }
 }
 @media screen and (min-width: 800px) {
-  main {
+  .main {
     margin: 40px 0px 0px 0px;
   }
-
-  main .resto_title {
+  .main__title {
     margin-left: 20px;
   }
-
-  .resto_list {
+  .main__list {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
   }
-
-  .card {
+  .main__card {
     width: 45%;
   }
 }
 @media screen and (min-width: 950px) {
-  .features ul {
+  .features__list {
     flex-direction: row;
     justify-content: center;
     gap: 16px;
     margin: 0 5%;
   }
 
-  .text {
+  .features__item__text {
     font-size: 14px;
   }
 }
 @media screen and (min-width: 1100px) {
-  .text {
+  .features__item__text {
     font-size: 16px;
   }
 }
