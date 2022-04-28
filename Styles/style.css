@@ -17,39 +17,37 @@ a:visited {
   color: rgb(0, 0, 0);
 }
 
-footer {
+.footer {
   margin-top: 55px;
   padding: 18px;
   background-color: #353535;
 }
-footer .OhMyFood_footer {
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+.footer__list a {
+  color: white;
+}
+.footer__list a:hover {
+  text-decoration: underline;
+}
+.footer__list .footer__item {
+  cursor: pointer;
+}
+.footer__logo {
   margin-bottom: 20px;
   color: white;
   font-weight: 400;
   font-family: Shrikhand, sans-serif;
   font-size: 22px;
 }
-footer .footer_icon {
+.footer__icon {
   width: 15px;
   height: 15px;
   margin-right: 5px;
-}
-
-.footer_list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-bottom: 25px;
-}
-.footer_list a {
-  color: white;
-}
-.footer_list .footer_item {
-  cursor: pointer;
-}
-
-.footer_list a:hover {
-  text-decoration: underline;
 }
 
 body {
@@ -57,6 +55,50 @@ body {
   background-color: white;
 }
 
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 25%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  z-index: 99999999;
+  height: 100%;
+  width: 50vw;
+  animation: disappear 1s ease infinite;
+  opacity: 1;
+}
+.loader__dot {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0 15px;
+  animation: loader 0.5s cubic-bezier(0.96, 0.01, 0.05, 0.97) 6;
+}
+.loader .dot1 {
+  background-color: #FF79DA;
+}
+.loader .dot2 {
+  background-color: #9356DC;
+}
+.loader .dot3 {
+  background-color: #99E2D0;
+}
+
+@keyframes loader {
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes disappear {
+  to {
+    display: none;
+  }
+}
 .header__logo {
   text-align: center;
   font-weight: 700;
