@@ -5,24 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/pageResto.css">
-    <title>La palette du goût</title>
+    <title>Le délice des sens</title>
 </head>
 <body>
+    <!-- Logo and arrow section -->
     <header class="header">
-        <div class="header_container">
-            <a href="index.html" class="header_arrow">
-                <img src="Icons/arrow.svg" alt="Left arrow">
+        <div class="header__container">
+            <a href="index.html" class="link">
+                <img src="Icons/arrow.svg" alt="Left arrow" class="link__arrow">
             </a>
-            <p class="restaurant_logo">ohmyfood</p>
+            <p class="header__logo">ohmyfood</p>
         </div>
-            <img src="AbdElFattah_Amr_3_images/restaurants/le_delice_des_sens.jpg" alt="" class="bgimg_resto" style="width: 100%;">
+            <img src="AbdElFattah_Amr_3_images/restaurants/le_delice_des_sens.jpg" alt="" class="header__backgroundImage">
     </header>
-    <main>
-        <div class="resto_menu">
-            <div class="menu_header">
-                <h3 class="resto_title">Le délice des sens</h3>
-                <div class="menu_heart">
-                    <svg class="heart heart_full" viewbox= "-20 0 550 550" xml:space="preserve">
+     <!-- List of meals section -->
+    <main class="main">
+        <div class="main__menu">
+            <div class="main__header">
+                <h3 class="main__title">Le délice des sens</h3>
+                <div class="heart">
+                    <svg class="heart__icon  heart--full" viewbox= "-20 0 550 550" xml:space="preserve">
                         <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
                         c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
                         c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
@@ -35,7 +37,7 @@
                         </linearGradient>
                       </defs>
                     </svg>
-                      <svg class="heart heart_empty" viewbox= "-20 0 550 550" xml:space="preserve">
+                      <svg class="heart__icon heart--empty" viewbox= "-20 0 550 550" xml:space="preserve">
                         <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
                         c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
                         c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
@@ -48,172 +50,175 @@
             </div>
         </div>
         <div class="menu_container">
-            <div class="menu_starter">
-              <div class="title_meals"><h3>entrées</h3></div>
-              <div class="menu_item " id="container_1">
-                <div class="menu_components">
-                  <div class="food_recipes">
-                    <div class="title">
+          <!-- Restaurant starters -->
+            <div class="menu">
+              <div class="menu__title"><h3>entrées</h3></div>
+              <div class="item" id="item_1">
+                <div class="components">
+                  <div class="recipes">
+                    <div class="recipes__title">
                       <p>Tartare de thon</p>
                     </div>
-                    <div class="food_recipes-subtitle">
-                      <p>Assaisonné ai yuzu</p>
+                    <div class="recipes__subtitle">
+                      <p>Assaisoné au yuzu</p>
                     </div>
                   </div>
-                  <div class="food_price">25€</div>
+                  <div class="item__price">25€</div>
               </div>
-                <div class="food_checked">
-                  <div class="bg_icon">
+                <div class="item__checked">
+                  <div class="item__icon">
                     <img src="Icons/check.svg" alt="" class="check_icon">
                   </div>
                 </div>
               </div>
-              <div class="menu_item " id="container_2">
-                <div class="menu_components">
-                  <div class="food_recipes">
-                    <div class="title">
-                      <p>Bouchée de homard croustillant</p>
+              <div class="item" id="item_2">
+                <div class="components">
+                  <div class="recipes">
+                    <div class="recipes__title">
+                      <p>Bouchée de homar croustillant</p>
                     </div>
-                    <div class="food_recipes-subtitle">
+                    <div class="recipes__subtitle">
                       <p>Et sa farandole de petits légumes</p>
                     </div>
                   </div>
-                  <div class="food_price">35€</div>
+                  <div class="item__price">35€</div>
               </div>
-                <div class="food_checked">
-                  <div class="bg_icon">
+                <div class="item__checked">
+                  <div class="item__icon">
                     <img src="Icons/check.svg" alt="" class="check_icon">
                   </div>
                 </div>
               </div>
-              <div class="menu_item " id="container_3">
-                <div class="menu_components">
-                  <div class="food_recipes">
-                    <div class="title">
+              <div class="item " id="item_3">
+                <div class="components">
+                  <div class="recipes">
+                    <div class="recipes__title">
                       <p>Velouté de cèpes</p>
                     </div>
-                    <div class="food_recipes-subtitle">
+                    <div class="recipes__subtitle">
                       <p>Aux truffes</p>
                     </div>
                   </div>
-                  <div class="food_price">20€</div>
+                  <div class="item__price">20€</div>
               </div>
-                <div class="food_checked">
-                  <div class="bg_icon">
+                <div class="item__checked">
+                  <div class="item__icon">
                     <img src="Icons/check.svg" alt="" class="check_icon">
                   </div>
                 </div>
               </div>
             </div>
-            <div class="menu_meals">
-             <div class="title_meals"><h3>plats</h3></div>
-             <div class="menu_item " id="container_4">
-              <div class="menu_components">
-                <div class="food_recipes">
-                  <div class="title">
+            <!-- Restaurant Dishes -->
+            <div class="menu">
+             <div class="menu__title"><h3>plats</h3></div>
+             <div class="item " id="item_4">
+              <div class="components">
+                <div class="recipes">
+                  <div class="recipes__title">
                     <p>Poulet rôti aux herbes de provence</p>
                   </div>
-                  <div class="food_recipes-subtitle">
+                  <div class="recipes__subtitle">
                     <p>Et sa crème de truffe</p>
                   </div>
                 </div>
-                <div class="food_price">40€</div>
+                <div class="item__price">40€</div>
             </div>
-              <div class="food_checked">
-                <div class="bg_icon">
+              <div class="item__checked">
+                <div class="item__icon">
                   <img src="Icons/check.svg" alt="" class="check_icon">
                 </div>
               </div>
             </div>
-            <div class="menu_item " id="container_5">
-              <div class="menu_components">
-                <div class="food_recipes">
-                  <div class="title">
-                    <p>langouste rôtie</p>
+            <div class="item " id="item_5">
+              <div class="components">
+                <div class="recipes">
+                  <div class="recipes__title">
+                    <p>Langouste rôtie</p>
                   </div>
-                  <div class="food_recipes-subtitle">
+                  <div class="recipes__subtitle">
                     <p>Et ses légumes de saison</p>
                   </div>
                 </div>
-                <div class="food_price">35€</div>
+                <div class="item__price">35€</div>
             </div>
-              <div class="food_checked">
-                <div class="bg_icon">
+              <div class="item__checked">
+                <div class="item__icon">
                   <img src="Icons/check.svg" alt="" class="check_icon">
                 </div>
               </div>
             </div>
-            <div class="menu_item " id="container_6">
-              <div class="menu_components">
-                <div class="food_recipes">
-                  <div class="title">
-                    <p>Côte de boeuf angus</p>
+            <div class="item " id="item_6">
+              <div class="components">
+                <div class="recipes">
+                  <div class="recipes__title">
+                    <p>Côté de boeuf angus</p>
                   </div>
-                  <div class="food_recipes-subtitle">
+                  <div class="recipes__subtitle">
                     <p>Et sa purée de panais</p>
                   </div>
                 </div>
-                <div class="food_price">44€</div>
+                <div class="item__price">44€</div>
             </div>
-              <div class="food_checked">
-                <div class="bg_icon">
+              <div class="item__checked">
+                <div class="item__icon">
                   <img src="Icons/check.svg" alt="" class="check_icon">
                 </div>
               </div>
             </div>
            </div>
-           <div class=" menu_desserts">
-             <div class="title_meals"><h3>desserts</h3></div>
-             <div class="menu_item " id="container_7">
-              <div class="menu_components">
-                <div class="food_recipes">
-                  <div class="title">
+          <!-- Restaurant Desserts -->
+           <div class="menu">
+             <div class="menu__title"><h3>desserts</h3></div>
+             <div class="item" id="item_7">
+              <div class="components">
+                <div class="recipes">
+                  <div class="recipes__title">
                     <p>Farandole de desserts</p>
                   </div>
-                  <div class="food_recipes-subtitle">
+                  <div class="recipes__subtitle">
                     <p>Du chef</p>
                   </div>
                 </div>
-                <div class="food_price">18€</div>
+                <div class="item__price">18€</div>
             </div>
-              <div class="food_checked">
-                <div class="bg_icon">
+              <div class="item__checked">
+                <div class="item__icon">
                   <img src="Icons/check.svg" alt="" class="check_icon">
                 </div>
               </div>
             </div>
-            <div class="menu_item " id="container_8">
-              <div class="menu_components">
-                <div class="food_recipes">
-                  <div class="title">
+            <div class="item " id="item_8">
+              <div class="components">
+                <div class="recipes">
+                  <div class="recipes__title">
                     <p>Crème brulée</p>
                   </div>
-                  <div class="food_recipes-subtitle">
+                  <div class="recipes__subtitle">
                     <p>Revisitée</p>
                   </div>
                 </div>
-                <div class="food_price">22€</div>
+                <div class="item__price">22€</div>
             </div>
-              <div class="food_checked">
-                <div class="bg_icon">
+              <div class="item__checked">
+                <div class="item__icon">
                   <img src="Icons/check.svg" alt="" class="check_icon">
                 </div>
               </div>
             </div>
-            <div class="menu_item" id="container_9">
-              <div class="menu_components">
-                <div class="food_recipes">
-                  <div class="title">
+            <div class="item" id="item_9">
+              <div class="components">
+                <div class="recipes">
+                  <div class="recipes__title">
                     <p>Tiramisu</p>
                   </div>
-                  <div class="food_recipes-subtitle">
+                  <div class="recipes__subtitle">
                     <p>A la noisette</p>
                   </div>
                 </div>
-                <div class="food_price">23€</div>
+                <div class="item__price">23€</div>
             </div>
-              <div class="food_checked">
-               <div class="bg_icon">
+              <div class="item__checked">
+               <div class="item__icon">
                 <img src="Icons/check.svg" alt="" class="check_icon">
                </div>
               </div>
@@ -221,22 +226,24 @@
            </div>
           </div>
     </main>
-    <div class="order_container">
-        <button class="order_button">Commander</button>
+    <!-- Order Button Section -->
+    <div class="order">
+        <button class="order__button">Commander</button>
     </div>
-    <footer class="resto_footer">
-        <p class="OhMyFood_footer">ohmyfood</p>
-        <div class="footer_list">
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p class="footer__logo">ohmyfood</p>
+        <div class="footer__list">
             <li> 
-              <a class="footer_item"> 
-              <img src="/Icons/fork_knife.svg" alt="" class="footer_icon">
+              <a class="footer__item"> 
+              <img src="/Icons/fork_knife.svg" alt="" class="footer__icon">
               Proposer un restaurant</a></li>
             <li>     
-              <a class="footer_item">
-              <img src="/Icons/hands.svg" alt="" class="footer_icon">
+              <a class="footer__item">
+              <img src="/Icons/hands.svg" alt="" class="footer__icon">
               Devenir un partenaire</a></li>  
-            <li><a class="footer_item">Mentions légales</a></li>
-            <li><a class="footer_item">Contact</a></li>
+            <li><a class="footer__item">Mentions légales</a></li>
+            <li><a class="footer__item">Contact</a></li>
         </div>
     </footer>
 </body>

@@ -1,5 +1,5 @@
 @media screen and (min-width: 970px) {
-    .menu_header {
+    .main__header {
         justify-content: center;
         gap: 200px;
         margin-bottom: 45px;
@@ -8,10 +8,10 @@
     .menu_container {
         display: flex;
         justify-content: center;
-        gap: 20px;
+        gap: 10px;
         padding-bottom: 30px;
     }
-    .menu_item {
+    .item {
         width: 300px;
     }
 }

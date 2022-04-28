@@ -1,34 +1,43 @@
  // Footer section 
- footer {
+ .footer {
     margin-top: 55px;
     padding: 18px;
     background-color: #353535;
-    .OhMyFood_footer {
+    
+    // Links list 
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 25px;
+
+
+        a {
+            color: white;
+        }
+
+        // Links animation
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer__item {
+            cursor: pointer;
+        }
+    }
+    // Ohmyfood logo
+    &__logo {
         margin-bottom: 20px;
         color: white;
         font-weight: 400;
         font-family: Shrikhand, sans-serif;
         font-size: 22px;
     }
-    .footer_icon {
+
+    // The two SVG images next to the links
+    &__icon {
         width           : 15px;
         height          : 15px;
         margin-right    : 5px;
     }
-}
-.footer_list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-bottom: 25px;
-    a {
-        color: white;
-    }
-    .footer_item {
-        cursor: pointer;
-    }
-}
-.footer_list a:hover {
-    text-decoration: underline;
-    
 }

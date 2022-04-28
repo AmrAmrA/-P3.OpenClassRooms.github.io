@@ -4,258 +4,268 @@
 @import '__footer.scss'; 
 
 // header 
+.header {
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 10% 0 8%;
+            // Arrow link back to the homepage
+            .link {
+                display: flex;
 
-    .bgimg_resto {
+                &__arrow {
+                    width: 30px;
+                }
+            }
+            .header__logo {
+                text-align: center;
+                font-weight: 700;
+                font-family: 'Shrikhand', sans-serif;
+                font-size: 30px;
+                padding: 15px;
+                margin: 0px auto;
+            }
+        }
+    // Restaurant image on the header background
+    &__backgroundImage {
         width: 100%;
         height: 400px;
         object-fit: cover;
     }
-    .header_container {
-        display: flex;
-        justify-content: flex-end;
-        padding: 0 10% 0 8%;
-        .header_arrow {
-            display: flex;
-            img {
-                width: 30px;
-            }
-        }
-        .restaurant_logo {
-            text-align: center;
-            font-weight: 700;
-            font-family: 'Shrikhand', sans-serif;
-            font-size: 30px;
-            padding: 15px;
-            margin: 0px auto;
-        }
-    }
+}
 
-    main {
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        transform: translateY(-30px);
-        background-color: rgb(235, 224, 224);
-        padding: 40px 5%;
-    }
-    .resto_title {
+// Display of the heart and the restaurant name 
+.main {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    transform: translateY(-30px);
+    background-color: rgb(235, 224, 224);
+    padding: 40px 5%;
+
+    
+    &__title {
         font-family: 'Shrikhand', sans-serif;
         display: flex;
         align-self: center;
     }
 
-    // Heart animation and the name of the restaurant
-    .menu_header {
+    &__header {
         display: flex;
         justify-content: space-between;
         padding: 0% 6% 12% 25px;
     }
+}   
 
-    .heart {
+    
+
+// The two superimposed hearts 
+.heart {
+    // global design for the hearts
+    &__icon {
         width: 25px;
         stroke-width: 30;
         stroke: black;
         fill: white;
-        cursor: pointer;
-        margin-top: 10px;
-      }
-      
-      .heart_full {
+        cursor: $cursorPointer;
+        margin-top: 10px;  
+    }
+    // The heart on the front
+    &--full {
         position: absolute;
         fill: url(#text-fill);
         stroke: none;
-      }
-      
-      .heart_empty {
+    }
+    // The heart on the back
+    &--empty {
         width: 25px;
         position: relative;
-      }
-      
-      .heart_empty:hover {
-        opacity: 0;
-        transition: 0.5s;
-      }
-    //   The food section
-
-    .menu_starter, .menu_meals, .menu_desserts{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        .title_meals {
-            position: relative;
-            font-weight: 400;
-            text-transform: uppercase;
-            margin: 16px 0px -9px 15px;
-            ::after {
-                content           : "";
-                display           : flex;
-                top               : 3px;
-                position          : relative;
-                width             : 28px;
-                height            : 3px;
-                background-color  : rgba(0, 128, 0, 0.4)
-            }
+        // The heart animation
+        &:hover {
+           opacity: 0;
+           transition: 0.5s;
         }
     }
-    .menu_item {
+       
+}   
+
+//The food section
+.menu {
+    display: flex;
+    flex-direction: $columnDirection;
+    gap: 20px;
+    // Menu, dish and dessert titles
+    &__title {
         position: relative;
-        cursor: pointer;
-        overflow: hidden;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: 70px;
-        border-radius: 15px;
-        background-color: white;
-        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
-        animation: apparition 5s cubic-bezier(0.96, 0.01, 0.05, 0.97);
-        
-        &:hover .food_checked {
-            display: flex;
-            justify-content: center;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 16px 0px -9px 15px;
+
+        // The green line under the titles
+        ::after {
+            content           : "";
+            display           : flex;
+            top               : 3px;
+            position          : relative;
+            width             : 28px;
+            height            : 3px;
+            background-color  : rgba(0, 128, 0, 0.4)
+        }
+    }
+}
+// each meal container
+.item {
+    position: relative;
+    cursor: $cursorPointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+    animation: apparition 5s cubic-bezier(0.96, 0.01, 0.05, 0.97);
+
+        // Animation for the green check section
+        &:hover .item__checked {
+            @include flexCenter; 
             animation: slide-left 0.5s ease;
             transform-origin: right;
-            align-items: center;
         }
-        &:hover .food_price {
+
+        // Price of the meal
+        &__price {
+            padding-right: 20px;
+            font-weight: bold;
+            padding-left: 7px;
+            
+        }
+        // Left slide for the meal price
+        &:hover .item__price {
             padding-right: 70px;
             transition: 0.5s ease ;
         }
-        .food_checked {
+
+        &__checked {
             display: none;
             position: absolute;
             background: #99E2D0;
-
             border-radius: 0 15px 15px 0;
             right: 0px;
             padding: 0 13px;
             width: 50px;
             height: 100%;
+
             img {
                 font-size: 30px;
                 transform: rotate(180deg);
                 animation: rotate 0.5s both;
             }
-            .bg_icon {
+
+            .item__icon {
                 background-color: rgb(255, 253, 253);
                 border-radius: 50%;
                 width: 25px;
                 height: 25px;
+
+                .check_icon {
+                    width   : 15px;
+                    height  : 15px;
+                    display: block;
+                    margin: 5px auto;
+                }
             }
         }
-    }
-    .food_recipes {
-        margin-left: 20px;
-        white-space: nowrap;
-        overflow: hidden;
-        .title {
-            font-weight: bold;
-        }
-    } 
-    .food_recipes p {
-        margin: 0;
-        text-overflow: ellipsis;
-        overflow: hidden;
-   
-    }
-        
-        .food_price {
-            padding-right: 20px;
-            font-weight: bold;
-            padding-left: 7px;
-        }
+}
+// Food ingredients 
+.components {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    .menu_components {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .food_recipes p {
-        margin: 0;
-    }
+    .recipes {
+       margin-left: 20px;
+       white-space: nowrap;
+       overflow: hidden;
+       // The meal name    
+       &__title {
+           font-weight: bold;
+       }
+       // The meal supplement    
+       &__subtitle p, 
+       // The meal name    
+       &__title p {
+           margin: 0;
+           text-overflow: ellipsis;
+           overflow: hidden;
+      
+       }
+   } 
+}
 
-    .check_icon {
-        width   : 15px;
-        height  : 15px;
-        display: block;
-        margin: 5px auto;
+// three keyframes animations
+
+// Check Icon Rotation
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
     }
 
-    @keyframes rotate {
-        0% {
-            transform: rotate(0);
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+// Check Price and icon apparition 
+@keyframes slide-left {
+    0% {
+        transform: scaleX(0);
     }
     100% {
-            transform: rotate(360deg);
-        }
+        transform: scaleX(-50px);
     }
-    
-      @keyframes slide-left {
-        0% {
-                  transform: scaleX(0);
-        }
-        100% {
-                  transform: scaleX(-50px);
-        }
-      }
+}
       
-     
-      @keyframes apparition {
-        0% {
-                  opacity: 0;
-        }
-        100% {
-                  opacity: 1;
-        }
-      }
-    
-#container_1 {
-    animation-delay: 1s;
-}
-#container_2 {
-    animation-delay: 1.2s;
-}
-#container_3 {
-    animation-delay: 1.4s;
-}
-#container_4 {
-    animation-delay: 1.6s;
-}
-#container_5 {
-    animation-delay: 1.8s;
-}
-#container_6 {
-    animation-delay: 2s;
-}
-#container_7 {
-    animation-delay: 2.2s;
-}
-#container_8 {
-    animation-delay: 2.4s;
-}
-#container_9 {
-    animation-delay: 2.6s;
-}
-    // Button Section 
-    .order_container {
-        display: flex;
-        justify-content: center;
+// Items apparition animation    
+@keyframes apparition {
+    0% {
+        opacity: 0;
     }
-    .order_button {
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// Loop for items apparition animation
+@for $i from 1 to 10 {
+    #item_#{$i} {
+        animation-duration: 0.3s*$i;
+    }
+}
+
+// Button Section 
+.order {
+    display: flex;
+    justify-content: center;
+
+    &__button {
         height: 60px;
         width: 226px;
         font-size: 26px;
         color: #f1f1f1;
-        background-image: linear-gradient(to right, #ff79da, #9356dc);
+        background-image: linear-gradient(to right, $Rose, $Violet);
         font-family: Roboto;
         border: none;
         border-radius: 30px;
-        cursor: pointer;
+        cursor: $cursorPointer;
         transition: box-shadow 0.7s ease-in-out;
-
+    
         &:hover {
             box-shadow: 3px -1px 5px 5px rgba(0,0,0,0.75);
         }
     }
+}
     @import '__restoQueries.scss'; 
