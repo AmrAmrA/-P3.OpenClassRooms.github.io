@@ -223,10 +223,10 @@ body {
 // Check Price and icon apparition 
 @keyframes slide-left {
     0% {
-        transform: scaleX(0);
+        transform: translateX(0);
     }
     100% {
-        transform: scaleX(-50px);
+        transform: translateX(0);
     }
 }
       
