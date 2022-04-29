@@ -275,6 +275,10 @@ body {
   animation-duration: 2.7s;
 }
 
+#item_10 {
+  animation-duration: 3s;
+}
+
 .order {
   display: flex;
   justify-content: center;

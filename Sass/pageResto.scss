@@ -242,7 +242,7 @@ body {
 }
 
 // Loop for items apparition animation
-@for $i from 1 to 10 {
+@for $i from 1 to 11 {
     #item_#{$i} {
         animation-duration: 0.3s*$i;
     }
