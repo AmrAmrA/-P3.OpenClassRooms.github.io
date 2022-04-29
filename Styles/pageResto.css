@@ -42,12 +42,16 @@ a:visited {
   color: white;
   font-weight: 400;
   font-family: Shrikhand, sans-serif;
-  font-size: 22px;
+  font-size: 18px;
 }
 .footer__icon {
   width: 15px;
   height: 15px;
   margin-right: 5px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
 }
 
 .header__container {
@@ -63,9 +67,7 @@ a:visited {
 }
 .header__container .header__logo {
   text-align: center;
-  font-weight: 700;
   font-family: "Shrikhand", sans-serif;
-  font-size: 30px;
   padding: 15px;
   margin: 0px auto;
 }
@@ -85,7 +87,6 @@ a:visited {
 .main__title {
   font-family: "Shrikhand", sans-serif;
   display: flex;
-  align-self: center;
 }
 .main__header {
   display: flex;
@@ -311,6 +312,11 @@ a:visited {
 
   .item {
     width: 300px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .item {
+    width: 350px;
   }
 }
 

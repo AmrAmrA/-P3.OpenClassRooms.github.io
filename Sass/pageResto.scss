@@ -3,6 +3,11 @@
 @import '__mixins.scss'; 
 @import '__footer.scss'; 
 
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+
 // header 
 .header {
     &__container {
@@ -19,9 +24,7 @@
             }
             .header__logo {
                 text-align: center;
-                font-weight: 700;
                 font-family: 'Shrikhand', sans-serif;
-                font-size: 30px;
                 padding: 15px;
                 margin: 0px auto;
             }
@@ -46,7 +49,6 @@
     &__title {
         font-family: 'Shrikhand', sans-serif;
         display: flex;
-        align-self: center;
     }
 
     &__header {

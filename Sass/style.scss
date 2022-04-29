@@ -7,55 +7,60 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: white;
 }
-
+// Loader layout
 .loader {
-    position:fixed; 
-    top: 50%;
-    left: 25%;
-    display: flex;
+    position: fixed;
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,2); 
+    z-index: 2;
+    cursor: pointer; 
     justify-content: center;
-    margin: 0 auto;
-    z-index: 99999999;
-    height: 100%;
-    width: 50vw;
-    animation: disappear 1s ease infinite;
-    opacity: 1;
+    align-items: center;
+    display: flex;
+    visibility: hidden;
+    animation: overlay 3.5s linear;
+    // Three dots of the loader 
     &__dot {
         width: 25px;
         height: 25px;
         border-radius: 50%;
-        background-color: #0000;
         margin: 0 15px;
-        animation: loader 0.5s cubic-bezier(0.96, 0.01, 0.05, 0.97) 6; 
+        animation: bounce 0.5s 4;
     }
+
     .dot1 {
         background-color: $Rose;
-
     }
     .dot2 {
         background-color: $Violet;
-
-
     }
     .dot3 {
         background-color: $Blue;
-    
-
     }
 }
-
-@keyframes loader {
-    50% {
+// Animation for the three dots
+@keyframes bounce {
+    100% {
         transform: translateY(-30px);
     }
-    100% {
-        transform: translateY(0px);
-    }
 }
-
-@keyframes disappear {
-    to {
-        display: none;
+// Animation of the disappartion of the loader
+@keyframes overlay {
+    0% {
+        visibility: visible;
+        opacity: 0.9;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
     }
 }
 
@@ -65,9 +70,7 @@ body {
     &__logo
      {
         text-align: $textCenter;
-        font-weight: 700;
         font-family: Shrikhand, sans-serif;
-        font-size: 30px; 
         padding: 15px;
         margin: 0px auto;
         box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.75);
@@ -104,6 +107,7 @@ body {
         text-align: $textCenter;
         color: rgb(100, 98, 98);
         font-size: 15px;
+        width: 85%;
     }
 
     &__button {
@@ -245,12 +249,7 @@ body {
                 display       : flex;
                 flex-direction: $columnDirection;
                 gap           : 5px;
-            }
-            // The restaurant name
-            .main__name {
-                font-size  : 18px;
-                font-weight: bold;
-            }   
+            } 
         }
 
 
