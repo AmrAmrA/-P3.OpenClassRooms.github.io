@@ -11,7 +11,8 @@ restaurants car leur menu est préparé à l’avance. Plus de perte de temps à
 
 -------------------------------------------------------------------  
 
-__Charte Graphique__
+__Charte Graphique__   
+
 Polices   
 Logo et titres : Shrikhand  
 Texte          : Roboto  
