@@ -14,7 +14,8 @@
     .main {
         margin: 40px 0px 0px 0px;
         &__title {
-            margin-left: 20px;
+            text-align: left;
+            margin-left: 5%;
         }
         &__list {
             flex-direction  : row;
