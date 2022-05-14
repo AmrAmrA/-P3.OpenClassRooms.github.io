@@ -15,7 +15,11 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="Sass/style.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Fonteawsome Library  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <!-- Twitter Card -->
     <meta name="title"                content="OhMyFood, projet 3 (p3) par OpenClassrooms - une entreprise de commande de repas en ligne !"> 
@@ -25,7 +29,7 @@
     <meta name="twitter:title"        content="OhMyFood. Une entreprise de commande de repas en ligne !.">
     <meta name="twitter:description"  content="OhMyFood. Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants car leur menu est préparé à l’avance. Plus de perte de temps à consulter la carte !
     Projet 3 (p3) dans le cadre de la formation développeur web chez OpenClassRooms. Réalisé par Abd El Fattah Amr.">
-    <meta name="twitter:image"        content="https://amramra.github.io/-P3.OpenClassRooms.github.io/AbdElFattah_Amr_3_images/restaurants/a_la_francaise.jpg">
+    <meta name="twitter:image"        content="https://amramra.github.io/-P3.OpenClassRooms.github.io/images/restaurants/a_la_francaise.jpg">
 
     <!-- Google Card -->
       <meta property="og:url"                content="https://amramra.github.io/-P3.OpenClassRooms.github.io/"/>
@@ -33,7 +37,7 @@
       <meta property="og:title"              content="OhMyFood. Une entreprise de commande de repas en ligne !."/>
       <meta property="og:description"        content="OhMyFood. Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants car leur menu est préparé à l’avance. Plus de perte de temps à consulter la carte !
       Projet 3 (p3) dans le cadre de la formation développeur web chez OpenClassRooms. Réalisé par Abd El Fattah Amr." />
-      <meta property="og:image"              content="https://amramra.github.io/-P3.OpenClassRooms.github.io/AbdElFattah_Amr_3_images/restaurants/a_la_francaise.jpg"/>
+      <meta property="og:image"              content="https://amramra.github.io/-P3.OpenClassRooms.github.io/images/restaurants/a_la_francaise.jpg"/>
 
     <title>OhMyFood</title>
 </head>
@@ -49,7 +53,7 @@
     </header>
     <!-- Location Section -->
     <div class="location">
-        <img src="Icons/location.svg" class="location__icon" alt="Location Icon">
+        <i class="fa-solid fa-location-dot fa-lg location__icon"></i>
         <p class="location__city">Paris, Belleville</p>
     </div>
     <!-- Presentation Section -->
@@ -64,17 +68,17 @@
         <ul class="features__list">
             <li class="features__item">
                 <span class="features__item__number">1</span>
-                <img src="Icons/phone.svg" alt="Mobile Phone Icon" class="features__item__icon">
+                <i class="fa-solid fa-mobile-screen-button features__item__icon""></i>
                 <span class="features__item__text">Choisissez votre restaurant</span>
             </li>
             <li class="features__item">
                 <span class="features__item__number">2</span>
-                <img src="Icons/menu.svg" alt="Hamburger Menu Icon" class="features__item__icon">
+                <i class="fa-list-ul fas features__item__icon"></i>
                 <span class="features__item__text">Composez votre menu</span>
             </li>
             <li class="features__item">
                 <span class="features__item__number">3</span>
-                <img src="Icons/store.svg" alt="Store Icon" class="features__item__icon">
+                <i class="fa-solid fa-store features__item__icon"></i>
                 <span class="features__item__text">Dégustez au restaurant</span>
             </li>
         </ul>
@@ -85,7 +89,7 @@
           <div class="main__list">
             <section class="main__card menilmontant_card">
               <a href="la-palette-du-gout.html">
-                <img src="AbdElFattah_Amr_3_images/restaurants/la_palette_du_gout.jpg" alt="" class="resto__cover">
+                <img src="images/restaurants/la_palette_du_gout.jpg" alt="" class="resto__cover">
                 <p class="main__button">Nouveau</p>
                 <div class="main__container">
                     <div class="main__informations">
@@ -117,7 +121,7 @@
             </section>
             <section class="main__card charonne_card">
               <a href="la-note-enchantee.html">
-                <img src="AbdElFattah_Amr_3_images/restaurants/la_note_enchantee.jpg" alt="" class="resto__cover">
+                <img src="images/restaurants/la_note_enchantee.jpg" alt="" class="resto__cover">
                 <p class="main__button">Nouveau</p>
                 <div class="main__container">
                     <div class="main__informations">
@@ -153,7 +157,7 @@
             </section>
             <section class="main__card citeRouge_card">
               <a href="a-la-francaise.html">
-                <img src="AbdElFattah_Amr_3_images/restaurants/a_la_francaise.jpg" alt="" class="resto__cover">
+                <img src="images/restaurants/a_la_francaise.jpg" alt="" class="resto__cover">
                 <div class="main__container">
                     <div class="main__informations">
                         <h3 class="main__name">À la française</h3>
@@ -184,7 +188,7 @@
             </section>
             <section class="main__card mericourt_card">
               <a href="le-delice-des-sens.html">
-                <img src="AbdElFattah_Amr_3_images/restaurants/le_delice_des_sens.jpg" alt="" class="resto__cover">
+                <img src="images/restaurants/le_delice_des_sens.jpg" alt="" class="resto__cover">
                 <div class="main__container">
                     <div class="main__informations">
                         <h3 class="main__name">Le délice des sens</h3>
@@ -221,15 +225,17 @@
         <ul class="footer__list">
             <li> 
               <a class="footer__item"> 
-              <img src="Icons/fork_knife.svg" alt="" class="footer__icon">
+              <i class="fa-solid fa-utensils footer__icon"></i>
               Proposer un restaurant</a></li>
             <li>     
               <a class="footer_item">
-              <img src="Icons/hands.svg" alt="" class="footer__icon">
+              <i class="fa-solid fa-handshake-angle footer__icon"></i>
               Devenir un partenaire</a></li>  
             <li><a class="footer__item">Mentions légales</a></li>
             <li><a class="footer__item" href="mailto:ohmyfood@hotmail.fr">Contact</a></li>
         </ul>
     </footer>
 </body>
+<!-- Script Fonteawsome -->
+<script src="https://kit.fontawesome.com/78e0d2d009.js" crossorigin="anonymous"></script>
 </html>

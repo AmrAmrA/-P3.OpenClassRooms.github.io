@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
+    background-color: #f6F6f6;
 }
 
 
@@ -14,9 +15,11 @@ body {
         display: flex;
         justify-content: flex-end;
         padding: 0 10% 0 8%;
+        background-color: #fff;
             // Arrow link back to the homepage
             .link {
                 display: flex;
+                align-items: center;
 
                 &__arrow {
                     width: 30px;
@@ -44,19 +47,21 @@ body {
     border-top-right-radius: 30px;
     transform: translateY(-30px);
     background-color: #f6F6f6; 
-    padding: 40px 5%;
+    padding: 25px 5%;
 
     
     &__title {
         font-family: 'Shrikhand', sans-serif;
         display: flex;
+        align-items: center;
         font-weight: normal;
+        font-size: 20px;
     }
 
     &__header {
         display: flex;
         justify-content: space-between;
-        padding: 0% 6% 12% 25px;
+        padding: 0% 6% 0% 25px;
     }
 }   
 
@@ -64,12 +69,13 @@ body {
 
 // The two superimposed hearts 
 .heart {
+    transform: translateY(-1px);
     // global design for the hearts
     &__icon {
         width: 25px;
         stroke-width: 30;
         stroke: black;
-        fill: white;
+        fill: #f6F6f6;
         cursor: $cursorPointer;
         margin-top: 10px;  
     }
@@ -78,10 +84,11 @@ body {
         position: absolute;
         fill: url(#text-fill);
         stroke: none;
+        width: 31px;
     }
     // The heart on the back
     &--empty {
-        width: 25px;
+        width: 31px;
         position: relative;
         // The heart animation
         &:hover {
@@ -102,7 +109,7 @@ body {
         position: relative;
         font-weight: 400;
         text-transform: uppercase;
-        margin: 16px 0px -9px 15px;
+        margin: 35px 0px -9px 15px;
 
         // The green line under the titles
         ::after {
@@ -142,7 +149,7 @@ body {
             padding-right: 20px;
             font-weight: bold;
             padding-left: 7px;
-            
+            margin-top: 18px;
         }
         // Left slide for the meal price
         &:hover .item__price {
@@ -161,10 +168,10 @@ body {
             height: 100%;
             transform: translateX(0px);
 
-            img {
-                font-size: 30px;
+            i {
                 transform: rotate(180deg);
                 animation: rotate 0.5s both;
+                color: #99E2D0;
             }
 
             .item__icon {
@@ -255,27 +262,29 @@ body {
 .order {
     display: flex;
     justify-content: center;
+    margin: 30px 0;
+    transform: translateY(-30px);
+}
 
-    &__button {
-        border: 0;
-        padding: 12px 24px;
-        width: 180px;
-        height: 50px;
-        font-weight: 500;
-        font-size: 18px;
-        border-radius: 90px;
-        text-align: center;
-        color: #fff;
-        background-color: #686868;
-        background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
-        transition-duration: 0.5s;
-        box-shadow: 4px 4px 10px rgba(0,0,0,.25);
-        cursor: pointer;
-    
-        &:hover {
-            background-color: #fff;
-            box-shadow: 4px 4px 10px rgba(0,0,0,.5);
-        }
-    }
+.order__button {
+    border: 0;
+    padding: 5px 24px;
+    width: 200px;
+    height: 60px;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 90px;
+    text-align: center;
+    color: #fff;
+    background-color: #686868;
+    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    transition-duration: 0.5s;
+    box-shadow: 4px 4px 10px rgba(0,0,0,.25);
+    cursor: pointer;
+}
+
+.order__button:hover {
+    background-color: #fff;
+    box-shadow: 4px 4px 10px rgba(0,0,0,.5);
 }
     @import '__restoQueries.scss'; 

@@ -70,8 +70,8 @@ body {
   align-items: center;
   display: flex;
   visibility: hidden;
-  -webkit-animation: overlay 3.5s linear;
-          animation: overlay 3.5s linear;
+  -webkit-animation: overlay 2.5s linear;
+          animation: overlay 2.5s linear;
 }
 .loader__dot {
   width: 25px;
@@ -134,6 +134,7 @@ body {
   padding: 15px;
   margin: 0px auto;
   box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.75);
+  background-color: #fff;
 }
 
 .location {
@@ -141,8 +142,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 5px;
-  padding: 12px 0;
-  background-color: rgba(128, 128, 128, 0.5);
+  padding: 15px 0;
+  background-color: rgba(24, 23, 23, 0.1);
 }
 .location__icon {
   width: 25px;
@@ -155,7 +156,9 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 15px;
-  padding: 20px 0px;
+  padding: 33px 0px;
+  background-color: #f6f6f6;
+  height: 290px;
 }
 .presentation__slogan {
   font-family: "Roboto", sans-serif;
@@ -169,13 +172,14 @@ body {
   color: rgb(100, 98, 98);
   font-size: 15px;
   width: 85%;
+  margin-bottom: 20px;
 }
 .presentation__button {
   border: none;
   outline: none;
   padding: 2px 10px;
   width: 250px;
-  height: 56px;
+  height: 52px;
   font-weight: 500;
   font-size: 18px;
   border-radius: 50px;
@@ -193,7 +197,7 @@ body {
 }
 
 .features {
-  margin: 40px 0px 0px 20px;
+  margin: 40px 0px 0px 12px;
   display: flex;
   flex-direction: column;
 }
@@ -201,6 +205,7 @@ body {
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 30px;
+  margin-left: 6%;
 }
 .features__list {
   display: flex;
@@ -208,11 +213,12 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 25px;
+  width: 97%;
 }
 .features__item {
   display: flex;
   background-color: #f6f6f6;
-  padding: 20px 8px;
+  padding: 22px 8px;
   gap: 20px;
   text-align: center;
   width: 95%;
@@ -240,6 +246,7 @@ body {
   width: 15px;
   height: 15px;
   margin: auto 0px;
+  color: #7e7e7e;
 }
 .features__item__text {
   font-size: 14px;
@@ -280,8 +287,8 @@ body {
   position: absolute;
   top: 5px;
   right: 20px;
-  background-color: lightgreen;
-  color: #1b6150;
+  background-color: #99e2d0;
+  color: #008766;
   padding: 10px;
   text-align: center;
 }
@@ -361,6 +368,7 @@ body {
     justify-content: center;
     gap: 16px;
     margin: 0 5%;
+    width: 90%;
   }
 
   .features__item__text {

@@ -52,15 +52,18 @@ a:visited {
 
 body {
   font-family: "Raleway", sans-serif;
+  background-color: #f6F6f6;
 }
 
 .header__container {
   display: flex;
   justify-content: flex-end;
   padding: 0 10% 0 8%;
+  background-color: #fff;
 }
 .header__container .link {
   display: flex;
+  align-items: center;
 }
 .header__container .link__arrow {
   width: 30px;
@@ -84,24 +87,29 @@ body {
   border-top-right-radius: 30px;
   transform: translateY(-30px);
   background-color: #f6F6f6;
-  padding: 40px 5%;
+  padding: 25px 5%;
 }
 .main__title {
   font-family: "Shrikhand", sans-serif;
   display: flex;
+  align-items: center;
   font-weight: normal;
+  font-size: 20px;
 }
 .main__header {
   display: flex;
   justify-content: space-between;
-  padding: 0% 6% 12% 25px;
+  padding: 0% 6% 0% 25px;
 }
 
+.heart {
+  transform: translateY(-1px);
+}
 .heart__icon {
   width: 25px;
   stroke-width: 30;
   stroke: black;
-  fill: white;
+  fill: #f6F6f6;
   cursor: pointer;
   margin-top: 10px;
 }
@@ -109,9 +117,10 @@ body {
   position: absolute;
   fill: url(#text-fill);
   stroke: none;
+  width: 31px;
 }
 .heart--empty {
-  width: 25px;
+  width: 31px;
   position: relative;
 }
 .heart--empty:hover {
@@ -128,7 +137,7 @@ body {
   position: relative;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 16px 0px -9px 15px;
+  margin: 35px 0px -9px 15px;
 }
 .menu__title ::after {
   content: "";
@@ -166,6 +175,7 @@ body {
   padding-right: 20px;
   font-weight: bold;
   padding-left: 7px;
+  margin-top: 18px;
 }
 .item:hover .item__price {
   padding-right: 70px;
@@ -182,11 +192,11 @@ body {
   height: 100%;
   transform: translateX(0px);
 }
-.item__checked img {
-  font-size: 30px;
+.item__checked i {
   transform: rotate(180deg);
   -webkit-animation: rotate 0.5s both;
           animation: rotate 0.5s both;
+  color: #99E2D0;
 }
 .item__checked .item__icon {
   background-color: rgb(255, 253, 253);
@@ -327,12 +337,15 @@ body {
 .order {
   display: flex;
   justify-content: center;
+  margin: 30px 0;
+  transform: translateY(-30px);
 }
+
 .order__button {
   border: 0;
-  padding: 12px 24px;
-  width: 180px;
-  height: 50px;
+  padding: 5px 24px;
+  width: 200px;
+  height: 60px;
   font-weight: 500;
   font-size: 18px;
   border-radius: 90px;
@@ -344,6 +357,7 @@ body {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
+
 .order__button:hover {
   background-color: #fff;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
@@ -353,8 +367,8 @@ body {
   .main__header {
     justify-content: center;
     gap: 200px;
-    margin-bottom: 45px;
-    padding: 0;
+    margin-bottom: 30px;
+    padding: 0% 6% 0% 25px;
   }
 
   .menu_container {
@@ -362,6 +376,10 @@ body {
     justify-content: center;
     gap: 10px;
     padding-bottom: 30px;
+  }
+
+  .menu__title {
+    margin-top: 0px;
   }
 
   .item {
