@@ -207,7 +207,7 @@ body {
        // The meal supplement    
        &__subtitle p, 
        // The meal name    
-       &__title p {
+       &__title h4 {
            margin: 0;
            text-overflow: ellipsis;
            overflow: hidden;
